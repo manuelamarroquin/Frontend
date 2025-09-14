@@ -6,7 +6,7 @@ import CardCandidato from "../components/CardCandidato";
 export default function CandidatosVotante() {
     const { id } = useParams();
     const [candidatos, setCandidatos] = useState([]);
-    const [candidatoSeleccionado, setCandidatoSeleccionado] = useState(null); // 👈 Guardamos el candidato que el usuario selecciona
+    const [candidatoSeleccionado, setCandidatoSeleccionado] = useState(null); 
 
     useEffect(() => {
         // Datos simulados
@@ -16,13 +16,13 @@ export default function CandidatosVotante() {
                     id: 1,
                     nombre: "Juan Pérez",
                     descripcion: "Estudiante de Ingeniería con experiencia en liderazgo estudiantil.",
-                    imagen: "/img/candidato1.jpg",
+                    imagen: "/img/candidato1.png",
                 },
                 {
                     id: 2,
                     nombre: "Ana Gómez",
                     descripcion: "Propuestas innovadoras para mejorar la calidad educativa.",
-                    imagen: "/img/candidato2.jpg",
+                    imagen: "/img/candidato2.png",
                 },
             ],
             2: [
@@ -30,7 +30,7 @@ export default function CandidatosVotante() {
                     id: 3,
                     nombre: "Carlos Ruiz",
                     descripcion: "Comprometido con la inclusión y el bienestar estudiantil.",
-                    imagen: "/img/candidato3.jpg",
+                    imagen: "/img/candidato3.png",
                 },
             ],
         };
@@ -39,17 +39,17 @@ export default function CandidatosVotante() {
     }, [id]);
 
     const handleVotar = (candidato) => {
-        setCandidatoSeleccionado(candidato); // 👈 Abre el modal
+        setCandidatoSeleccionado(candidato);
     };
 
     const confirmarVoto = () => {
         // Aquí luego puedes hacer fetch/axios para enviar el voto al backend
         alert(`✅ Voto confirmado para ${candidatoSeleccionado.nombre}`);
-        setCandidatoSeleccionado(null); // 👈 Cierra el modal
+        setCandidatoSeleccionado(null); 
     };
 
     const cancelarVoto = () => {
-        setCandidatoSeleccionado(null); // 👈 Cierra el modal sin votar
+        setCandidatoSeleccionado(null); 
     };
 
     return (

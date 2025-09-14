@@ -50,7 +50,7 @@ export default function Votante() {
               Próximas Elecciónes
             </h3>
             <p className="text-gray-700">
-              Se informara las proximas elecciones para que participes en las proximas elecciones.
+              Se informara las proximas elecciones para que participes en estas.
               ¡Tu voto cuenta!
             </p>
           </div>

@@ -16,21 +16,21 @@ export default function GestionElecciones() {
           nombre: "Elección de Rector 2025",
           fecha: "15 de septiembre 2025",
           estado: "Activa",
-          imagen: "/img/rector.jpg",
+          imagen: "/img/rector.png",
         },
         {
           id: 2,
           nombre: "Elección de Representante Estudiantil",
           fecha: "10 de octubre 2025",
           estado: "Próxima",
-          imagen: "/img/representante.jpg",
+          imagen: "/img/representante.png",
         },
         {
           id: 3,
           nombre: "Elección de Consejo Académico",
           fecha: "1 de agosto 2025",
           estado: "Finalizada",
-          imagen: "/img/consejo.jpg",
+          imagen: "/img/consejo.png",
         },
       ]);
       setCargando(false);

@@ -3,7 +3,8 @@ import React from "react";
 
 export default function CardCandidato({ candidato, onVotar }) {
   return (
-    <div className="bg-white shadow-md rounded-xl p-6 flex flex-col items-center text-center hover:shadow-lg transition-shadow">
+    
+    <div className="bg-white rounded-lg shadow-md overflow-hidden m-4 cursor-pointer transform hover:scale-105 transition-transform duration">
       <img
         src={candidato.imagen}
         alt={candidato.nombre}
