@@ -20,6 +20,10 @@ import Ver_candidatos_adm from "./pages/Ver_candidatos_adm";
 import Resultado_candidatos_admin from "./pages/Resultado_candidatos_admin";
 import Aprobar_Eliminar_cand_admin from "./pages/Aprobar_Eliminar_cand_admin";
 import Mi_perfil_admin from "./pages/Mi_perfil_admin";
+import Inf_votante from "./pages/Inf_votante";
+import Inf_candidato from "./pages/Inf_candidato";
+import Registro_candidato from "./pages/Registro_candidato";
+
 
 
 
@@ -48,8 +52,9 @@ export default function App() {
           <Route path="/Resultado_candidatos_admin" element={<Resultado_candidatos_admin/>} />
           <Route path="/Aprobar_Eliminar_cand_admin" element={<Aprobar_Eliminar_cand_admin/>} />
           <Route path="/Mi_perfil_admin" element={<Mi_perfil_admin/>} />
-
-          
+          <Route path="/Inf_votante" element={<Inf_votante/>} />
+          <Route path="/Inf_candidato" element={<Inf_candidato/>} />
+          <Route path="/Registro_candidato" element={<Registro_candidato/>} />
         </Routes>
       </div>
 

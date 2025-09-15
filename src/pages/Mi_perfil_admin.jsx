@@ -118,12 +118,12 @@ const Mi_perfil_admin = () => {
                     name="nombre"
                     value={formulario.nombre}
                     onChange={handleChange}
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 bg-gray-200 cursor-not-allowed"
                   />
                 </div>
                 {/* Apellido */}
                 <div>
-                  <label className="block text-sm font-medium text-gray-700">
+                  <label className="block text-sm font-medium text-gray-700 ">
                     Apellido
                   </label>
                   <input
@@ -131,7 +131,7 @@ const Mi_perfil_admin = () => {
                     name="apellido"
                     value={formulario.apellido}
                     onChange={handleChange}
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 bg-gray-200 cursor-not-allowed"
                   />
                 </div>
                 {/* Tipo de Documento */}
@@ -144,7 +144,7 @@ const Mi_perfil_admin = () => {
                     name="tipoDoc"
                     value={formulario.tipoDoc}
                     onChange={handleChange}
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 "
                   />
                 </div>
                 {/* Número de Documento */}
@@ -157,7 +157,7 @@ const Mi_perfil_admin = () => {
                     name="numeroDoc"
                     value={formulario.numeroDoc}
                     onChange={handleChange}
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 bg-gray-200 cursor-not-allowed"
                   />
                 </div>
                 {/* Correo */}

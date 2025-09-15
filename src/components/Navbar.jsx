@@ -17,7 +17,7 @@ const Navbar = () => {
     <>
       <nav className="fixed top-0 w-full bg-blue-900 text-white flex items-center justify-between px-5 h-24 z-50">
         <img
-          src="/img/logo4.png"
+          src="/img/logo-azul.jpeg"
           alt="Logo"
           className="h-24 w-auto"
         />
