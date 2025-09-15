@@ -15,8 +15,13 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed top-0 w-full bg-blue-900 text-white flex items-center justify-between px-5 h-14 z-50">
-        <div className="font-bold text-lg">Logo</div>
+      <nav className="fixed top-0 w-full bg-blue-900 text-white flex items-center justify-between px-5 h-24 z-50">
+        <img
+          src="/img/logo4.png"
+          alt="Logo"
+          className="h-24 w-auto"
+        />
+
 
         {/* Botón hamburguesa */}
         <button
@@ -41,7 +46,7 @@ const Navbar = () => {
             className="relative group cursor-pointer md:px-4 py-3 md:py-0 border-b border-blue-800 md:border-none"
             onClick={() => setSubmenuOpen(!submenuOpen)}
             tabIndex={0}
-            onKeyPress={(e) => { if(e.key === 'Enter') setSubmenuOpen(!submenuOpen)}}
+            onKeyPress={(e) => { if (e.key === 'Enter') setSubmenuOpen(!submenuOpen) }}
             aria-haspopup="true"
             aria-expanded={submenuOpen}
           >
@@ -84,6 +89,7 @@ const Navbar = () => {
             Registrarse
           </li>
         </ul>
+        
       </nav>
     </>
   );
